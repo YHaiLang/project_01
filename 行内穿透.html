@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            margin: 50px auto;
+        }
+        .inner-box {
+            width: 100%;
+            height: 100%;
+            background-color: orange;
+        }
+        .bb {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner-box">
+            <a href="">
+                <!-- 外面如果是行内元素没有设置宽高的话，宽高是都可以撑开的；而如果外面是块级元素没有设置宽高的话，高度无法撑开 -->
+                <div class="dab">
+                    <div class="bb"></div>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
